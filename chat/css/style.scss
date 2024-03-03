@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    color: mediumaquamarine;
+    background-color: bisque;
+}
+body{
+    background-color: rgb(68, 33, 33);
+}
+#chat{
+    height: 500px;
+    width: 450px;
+    position: fixed;
+    bottom: 0px;
+    right: 25px;
+    border: 1px solid red;
+    border-radius: 25px 25px 0 0;
+    header{
+        border-radius: 25px 25px 0 0;
+        background-color: pink;
+        .header-icons{
+            color: black;
+            padding: 10px 25px;
+            span{
+                display: inline-block;
+                margin-right: 15px;
+                cursor: pointer;
+                font-size: 18px;
+            }
+        }
+        .header-text{
+            padding: 15px 15px;
+            p{
+                color: white;
+                font-weight: 900;
+                font-size: 20px;
+            }
+        }
+    }
+    main{
+        height: 330px;
+        overflow-y: scroll;
+        padding: 10px;
+        background-color: rgb(247, 241, 241);
+        .message{
+            background-color: aqua;
+            width: 51%;
+            padding: 5px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            position: relative;
+            p{
+                margin: 0;
+            }
+        }
+        .support{
+            background-color: chartreuse;
+            float: left;
+            border-radius: 15px;
+        }
+        .user{
+            float: right;
+            
+        }
+    }
+}
+.cli{
+    a{
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        text-decoration: none;
+        background-color: rgb(188, 147, 208);
+        color: azure;
+        padding: 20px 35px;
+        border-radius: 10px;
+        z-index: -6;
+    }
+}

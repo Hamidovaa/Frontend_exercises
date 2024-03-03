@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.draggable-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    i{
+        padding: 0 15px;
+        font-size: 70px;
+        cursor: move;
+    }
+}
+
+.dropable-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dropable{
+        border: 3px dashed crimson;
+        padding: 25px;
+        margin: 25px;
+    }
+}
+
+.draggable-hover{
+    border-width: 6px !important;
+}

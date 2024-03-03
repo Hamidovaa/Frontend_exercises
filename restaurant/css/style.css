@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* pages */
+ ul{
+    list-style: none;
+}
+.navlist li ul li {
+    display: none;
+}
+ .navlist li:hover .pages li{
+    display: block;
+}
+.pages{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.hpages{
+    position: relative;
+}
+
+.pages{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: hotpink;
+}  
+/* pages */
+
+
+
+
+
+
+/* menus */
+
+
+/* .navlist li:hover .menu li{
+    display: block;
+}
+.menu{
+    display: flex;
+    flex-direction: column-reverse;
+}  */
+/* .hmenu{
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: hotpink;
+}   */
+/* menus */
+
+
+
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+.up{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgb(36, 35, 35);
+}
+.header .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+.header .menu ul{
+    display: flex;
+    align-items: center;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+}
+.menu ul li a{
+    padding: 0 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: lighter;
+}
+.menu ul li{
+    padding: 0 15px;
+}
+.menu ul li i{
+    color: white;
+}
+.items .bt{
+    padding: 16px 40px;
+    color: azure;
+    background-color: rgba(250, 214, 11, 0.884);
+}
+
+.logo img{
+    width: 150px;
+}
+.containerone{
+    
+    line-height: 30px;
+    background-color:rgb(36, 35, 35) ;
+}
+.containerthree{
+    display: flex;
+    align-items: center;
+    padding: 250px 200px 0px 400px;
+}
+.header-left h2{
+    font-size: 51px;
+    color:white;
+    
+}
+.header-left h3{
+    font-size: 35px;
+    color: azure;
+    padding: 40px 0;
+
+}
+.header-left p{
+    font-size: 20px;
+    color: azure;
+    padding-bottom: 40px;
+    
+}
+.buttonone{
+    padding: 16px 40px;
+    color: azure;
+    background-color: rgba(250, 214, 11, 0.884);
+}
+.down{
+    display: flex;
+    justify-content: space-around;
+    padding:0 550px 0 320px;
+}
+
+.vertical{
+    height: 50px;
+}
+.minipone{
+    display: flex;
+    width: 400px;
+    height: 100px;
+    color: azure;
+    border-radius: 60px;
+    background-color: rgb(29, 28, 28);
+    
+    
+}
+
+.miniptwo{
+    display: flex;
+    width: 400px;
+    height: 100px;
+    color: azure;
+    border-radius: 60px;
+    background-color: rgb(29, 28, 28);
+}
+.food img{
+    padding-right: 15px;
+}
+
+
+
+
+

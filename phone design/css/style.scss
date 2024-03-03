@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    background-color: dimgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper{
+    width: 70%;
+    height: 75%;
+    border: 2px solid pink;
+    display: flex;
+}
+.phone-wrapper{
+    width: 60%;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone{
+    position: relative;
+    width: 50%;
+    height: 90%;
+    border-radius: 15px;
+    background: linear-gradient(72.3deg, rgb(29, 7, 64) 8.5%, rgb(253, 105, 139) 92.2%);;
+}
+span{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.assest{
+    width: 40%;
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+}
+.items{
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.settings{
+    background-color: pink;
+}
+.big-camera{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #222;
+    border: 2px solid darkolivegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .lens{
+        background-color: gray;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+}
+.medium-camera{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #222;
+    border: 2px solid darkolivegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .lens{
+        background-color: gray;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+}
+.medium-camera{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #222;
+    border: 2px solid darkolivegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .lens{
+        background-color: gray;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+}
+.flash-camera{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 3px solid gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .lens{
+        background-color: white;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+}
+img{
+    width: 50px;
+}
+.black{
+    background-color: #4d4855;
+background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+
+}
+.pink{
+    background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #ff7878 74%);
+
+}
+.grey{
+    background-color: #5b6467;
+background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+}
+.blue{
+    background-color: #182b3a;
+background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+
+}
+.purple{
+    background-color: #cdc1ff;
+background-image: linear-gradient(316deg, #cdc1ff 0%, #e5d9f2 74%);
+}
+.red{
+    background-color: #c62128;
+background-image: linear-gradient(147deg, #c62128 0%, #a00000 74%);
+}
+.item{
+    cursor: pointer;
+}

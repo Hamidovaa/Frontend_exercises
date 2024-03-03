@@ -1,0 +1,143 @@
+/* min height  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #121321;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    perspective: 1000px;
+}
+section::before{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-150px, -100px);
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+}
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(150px, 100px);
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+}
+.container{
+    height: 275px;
+    width: 455px;
+    position: relative;
+    z-index: 100;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
+.container .card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+    box-shadow:  0 25px 45px rgba(0, 0, 0, 0.25) ;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid (255, 255, 255, 0.1);  
+    backface-visibility: hidden;
+}
+header .chip{
+    transform: rotateZ(90deg );
+}
+.front-face header, 
+.front-face .logo{
+    display: flex;
+    align-items: center;
+}
+.front-face header{
+    justify-content:space-between ;
+}
+.front-face .logo img{
+    width: 68px;
+    margin-right:10px ;
+}
+h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+.front-face .chip{
+    width: 50px;
+}
+.front-face .card-details{
+    display: flex;
+    margin-top: 30px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+h6{
+    font-size: 19px;
+    font-weight: 400;
+
+}
+.number{
+    font-size: 23px;
+    letter-spacing: 1px;
+    padding: 15px 0;
+}
+.name{
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.back-face{
+    border: none;
+    padding: 10px 25px 25px 25px;
+    transform: rotateY(180deg);
+}
+.back-face h6{
+    font-size: 11px;
+} 
+.back-face .magnetic-strip{
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    background: #000;
+}
+.back-face .signature{
+    margin-top: 80px;
+    height: 40px;
+    border-radius: 6px;
+    width: 85%;
+    background: repeating-linear-gradient(#fff, #fff 3px, #efefef 0px, #efefef 9px );
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.signature i{
+    color: #000;
+    font-size: 12px;
+    margin-right: -30px;
+    padding: 4px 6px ;
+    border-radius: 4px;
+    z-index: -1;
+    background-color: #fff;
+}
+.back-face h5{
+    font-size: 14px;
+    margin-top: 12px;
+}
